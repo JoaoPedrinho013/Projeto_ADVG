@@ -21,11 +21,13 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="style.css">
+  <!--Aqui é para os botoes do insta, face, etc-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <title>CFS & Ribeiro Advogados</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-secondary bg-gradient">
   <header class=" d-flex justify-content-center bg-secondary bg-gradient p-4 fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light  bg-secondary bg-gradient">
       <a class="navbar-brand mr-5" href="index.html">CFS & Ribeiro <br>&nbsp; Advogados</a>
@@ -60,6 +62,8 @@
   </header>
 
   <main>
+
+
     <div class="parallax pt-5 mt-5 ">
       <div class="d-flex  flex-column align-items-center" id="text-parallax">
         <h1>CFS & Ribeiro</h1>
@@ -70,57 +74,131 @@
 
 
 
-    <div class="container-fluid p-3 d-flex  flex-column align-items-center font-italic" id="container_atuacao">
-      <h1 class="display-4 pb-3" id="atuacao_display">ÁREAS DE ATUAÇÃO</h1>
+    <div class="container-fluid p-3 d-flex  flex-column align-items-center font-italic" id="claras">
+      <h1 class="shadow-text display-4 pb-3">ÁREAS DE ATUAÇÃO</h1>
 
       <div class="d-flex flex-row align-items-center py-2">
 
         <a href="" id="cards">
           <div class="card mr-4">
-            <div class="card-body" id="cards_box">
+            <div class="card-body p-3" id="cards_box">
               <h5 class="card-title">Trabalhista</h5>
             </div>
           </div>
         </a>
         <a href="" id="cards">
           <div class="card mr-4">
-            <div class="card-body" id="cards_box">
+            <div class="card-body p-3" id="cards_box">
               <h5 class="card-title">Civil</h5>
             </div>
           </div>
         </a>
         <a href="" id="cards">
           <div class="card mr-4">
-            <div class="card-body" id="cards_box">
+            <div class="card-body p-3" id="cards_box">
               <h5 class="card-title">Contrato</h5>
             </div>
           </div>
         </a>
         <a href="" id="cards">
           <div class="card mr-4">
-            <div class="card-body" id="cards_box">
+            <div class="card-body p-3" id="cards_box">
               <h5 class="card-title">Licitações</h5>
             </div>
           </div>
         </a>
 
       </div>
-      <button type="button" class="btn btn-lg mt-5 mb-3 font-italic" id="areas_button">Todas as áreas de atuação</button>
-
+      <button type="button" class="btn btn-lg mt-5 mb-3 font-italic" id="areas_button">Todas as áreas de
+        atuação</button>
     </div>
 
-    <div class="container-fluid p-5 mb-2 d-flex  flex-column align-items-center font-italic  bg-secondary bg-gradient">
-      
-      <div style="max-width: 30%;">
-        <p class="text-justify font-italic">No escritório CFS & Ribeiro Advogados, nossos clientes encontram uma equipe dedicada e experiente, pronta para oferecer soluções jurídicas personalizadas e inovadoras. Com uma abordagem estratégica, buscamos entender profundamente cada caso para garantir os melhores resultados. Valorizamos a transparência, a ética e o compromisso com a justiça, estabelecendo uma relação de confiança com nossos clientes.</p>
+
+
+    <div class="container-fluid p-5 d-flex  flex-column align-items-center font-italic  bg-secondary bg-gradient">
+      <div style="max-width: 40%;">
+        <p class="text-justify font-italic filosofia p-3">&nbsp;
+          No escritório CFS & Ribeiro Advogados, nossos clientes encontram uma equipe dedicada e experiente, pronta para
+          oferecer soluções jurídicas personalizadas e inovadoras. <br>
+          &nbsp;Com uma abordagem estratégica, buscamos entender profundamente cada caso para garantir os melhores
+          resultados. <br>
+          &nbsp;Valorizamos a transparência, a ética e o compromisso com a justiça, estabelecendo uma relação de
+          confiança com nossos clientes.</p>
+      </div>
+    </div>
+
+
+    <div class="container-fluid p-3 d-flex align-items-center" id="claras">
+      <div class="row w-100">
+
+        <div class="container p-3 col-6 text-center">
+
+          <h1 class="shadow-text pb-3">FALE CONOSCO</h1>
+          <p class="h5 pb-3">
+            <a class="links_sociais" href="#">
+              <i class="fa-solid fa-location-dot"></i>
+              Itanhaém, 999, Brasil
+            </a>
+          </p>
+
+          <p class="h5 pb-3">
+            <a class="links_sociais" href="#">
+              <i class="fab fa-instagram"></i>
+              CFS & Ribeiro Advogados
+            </a>
+          </p>
+
+          <p class="h5 pb-3">
+            <a class="links_sociais" href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+              (99) 9999-9999
+            </a>
+          </p>
+
+          <p class="h5 pb-3">
+            <a class="links_sociais" href="mailto:">
+              <i class="fa-regular fa-envelope"></i>
+              email@email.adv.br
+            </a>
+          </p>
+        </div>
+
+        <div class="container p-3 col-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="nome_form" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email_form" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputFone" placeholder="Telefone"
+                pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="mensagem_form" rows="3" placeholder="Digite sua mensagem aqui..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg" id="areas_button">Enviar</button>
+          </form>
+        </div>
+
       </div>
     </div>
 
   </main>
 
-  <footer class=" bg-secondary bg-gradient">
-    <a href="#" class="scrollToTop">Voltar ao topo</a>
-    <p class="py-3 text-center copyright"><em>Copyright 2024 &copy; William Dias Advogado</em></p>
+  <footer>
+    <p class="h3 text-center pt-3">
+      <a class="links_sociais scrollToTop" href="#">
+        <i class="fa-solid fa-arrow-up-long"></i>
+        <p class="text-center">VOLTAR AO TOPO</p>
+      </a>
+    </p>
+
+
+    
+    <p class="text-center copyright"><em>Copyright 2024 &copy; CFS & Ribeiro Advogados</em></p>
   </footer>
 
   <script src="script.js"></script>

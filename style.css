@@ -2,6 +2,7 @@ html, body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lucida Bright', Georgia, serif;
 }
 .parallax {
     background-image: url("balança.jpg");   
@@ -33,12 +34,8 @@ html, body {
     margin-top: 5em;
 }
 
-#container_atuacao {
+#claras {
     background-color: rgb(185, 179, 169);
-}
-
-#atuacao_display{
-    color: rgba(0, 0, 0, 0.651);
 }
 
 #cards:hover {
@@ -60,8 +57,26 @@ html, body {
 #areas_button {
     background-color: rgb(133, 126, 114);
     color: rgba(0, 0, 0, 0.651);
+   
 }
 #areas_button:hover {
+    color: rgb(65, 63, 63);
+    text-decoration: underline;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.651);
+    
+}
+
+.filosofia {
+    font-size: 1.5em;
+}
+.links_sociais {
+    color: rgba(0, 0, 0, 0.651);
+}
+.links_sociais:hover {
     color: rgb(65, 63, 63);
     text-decoration: underline;
 }

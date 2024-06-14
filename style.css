@@ -3,7 +3,28 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Lucida Bright', Georgia, serif;
+    height: 100%;
+   
+    
 }
+
+header {
+    flex: 0 1 auto;
+}
+
+main {
+    flex: 1;
+   
+}
+
+footer {
+    padding: 10px 0;
+}
+
+.copyright{
+    color: rgba(0, 0, 0, 0.452);
+}
+
 .parallax {
     background-image: url("balança.jpg");   
     background-size: cover;
@@ -11,21 +32,13 @@ html, body {
     height: 900px;
     width: 100%;
 }
-
-
-.copyright{
-    color: rgba(0, 0, 0, 0.452);
-}
-
 #text-parallax{
     padding-top: 10em;
 }
-
-
 #text-parallax > h1{
     color: white;
     font-size: 4em;
-    
+
 }
 #text-parallax > a{
     background-color: rgba(255, 0, 0, 0.726);
@@ -45,7 +58,6 @@ html, body {
    
 
 }
-
 #cards_box {
     background-color: rgb(133, 126, 114);
     color: rgba(0, 0, 0, 0.651);
@@ -73,10 +85,29 @@ html, body {
 .filosofia {
     font-size: 1.5em;
 }
+
 .links_sociais {
     color: rgba(0, 0, 0, 0.651);
 }
 .links_sociais:hover {
     color: rgb(65, 63, 63);
     text-decoration: underline;
+}
+
+.cards_advogados{
+    margin: 0em 30em;
+}
+.card_item {
+    margin: 1em 0;
+}
+.card_item:first-child {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.card_item .btn_invertido.btn {
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+.socios {
+    color: rgb(177, 162, 82);
 }
